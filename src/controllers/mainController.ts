@@ -2,17 +2,13 @@
  * Created by rsparrow on 9/13/16.
  */
 
-//module ProjectTemplateApp {
+export class MainController {
 
-    export class MainController {
+    static $inject = [];
 
-        static $inject = [];
+    constructor() {
 
-        constructor() {
-
-        }
-
-        messsage: string = "Hello from our controller";
     }
 
-//}
+    message: string = "Hello from our controller";
+}
