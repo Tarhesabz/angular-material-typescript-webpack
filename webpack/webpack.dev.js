@@ -1,6 +1,7 @@
 var loaders = require("./loaders");
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ReloadHTMLWebpackPlugin = require ('reload-html-webpack-plugin');
 var webpack = require('webpack'),
     devServer;
 
@@ -51,6 +52,7 @@ module.exports = {
             hash: true
         }),
 
+        new ReloadHTMLWebpackPlugin(),
 
         new BrowserSyncPlugin({
             host: 'localhost',
