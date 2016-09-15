@@ -8,12 +8,20 @@
     <title>Project Template</title>
     <link rel="stylesheet" href="assets/styles/angular-csp.css" />
 
+
 </head>
 
-<body ng-cloak ng-controller="mainController as vm">
-    <h1>This is an h1 test in the body</h1>
-    <div>{{ vm.message }}</div>
-    <div>{{ 2 + 2}}</div>
+<body layout="row" ng-cloak ng-controller="mainController as vm">
+
+    <div ng-include="'views/sidenav.html'" layout="vertical"></div>
+
+    <div layout="column" flex>
+        <div ng-include="'views/toolbar-header.html'"></div>
+        <md-content flex id="content">
+            Main Content
+        </md-content>
+    </div>
+
 </body>
 
 

@@ -4,8 +4,6 @@
 
 import "./boot.ts";
 
-import "../node_modules/angular-material/angular-material.css";
-
 import "./index.scss";
 
 
